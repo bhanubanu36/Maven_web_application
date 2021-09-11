@@ -22,8 +22,11 @@
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
 		<sonar.host.url>http://localhost:9000/</sonar.host.url>
+		<sonar.login>ba7ed932876e52d90893fa8c0f35c316a240ac71</sonar.login>
+		<!--
 		<sonar.login>admin</sonar.login>
 		<sonar.password>admin</sonar.password>
+		-->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -103,7 +106,7 @@
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
+	      <name>Mithun Technologies Snapshot Nexus Repository</name>
 	      <url>http://localhost:8081/repository/flipkart-snapshot/</url>
 	    </snapshotRepository>
 	    
@@ -144,7 +147,7 @@
 					<downloadJavadocs>true</downloadJavadocs>
 					<wtpversion>2.0</wtpversion>
 					<wtpContextName>maven-web-application</wtpContextName>
-				</configuration>
+				</configuration> 
 			</plugin>
 			
 </plugins>
