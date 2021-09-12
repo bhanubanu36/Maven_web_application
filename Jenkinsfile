@@ -24,7 +24,7 @@ git credentialsId: '2477c8c7-b215-4869-8e80-b4b6228d7489', url: 'https://github.
  }
  
  
- stage('UploadArtifactIntoNexus'){
+ stage('UploadArtifactIntoNexus'){ 
  bat "${mavenHome}/bin/mvn clean deploy"
  }
  
