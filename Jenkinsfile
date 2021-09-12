@@ -39,12 +39,6 @@ node('wallmart-node'){
  
  */
  
- stage('SendEmailNotification'){
-   emailext body: '''Build is over !!
-
-   Regards,
-   Mithun Technologies,
-   9980923226''', subject: 'Build Over... !!', to: 'devopstrainingblr@gmail.com'
  }
  
  
