@@ -16,16 +16,16 @@ git credentialsId: '2477c8c7-b215-4869-8e80-b4b6228d7489', url: 'https://github.
  
  stage('Build')
  {
-  sh "${mavenHome}/bin/mvn clean package"
+  bat "${mavenHome}/bin/mvn clean package"
  }
 
  stage('SonarQubeReport'){
- sh "${mavenHome}/bin/mvn clean sonar:sonar"
+ bat "${mavenHome}/bin/mvn clean sonar:sonar"
  }
  
  
  stage('UploadArtifactIntoNexus'){
- sh "${mavenHome}/bin/mvn clean deploy"
+ bat "${mavenHome}/bin/mvn clean deploy"
  }
  
  
